@@ -4,7 +4,7 @@ set -e
 echo "=== Installing..."
 
 if [[ -e $HOME/.inputrc || -e $HOME/.bash_profile || -e $HOME/.aliases ]]; then
-    echo "Error: Either ~/.bash_profile or ~/.aliases already exists."
+    echo "Error: Either ~/.inputrc or ~/.bash_profile or ~/.aliases already exists."
     echo "Rename the files and then try again."
     exit 1
 fi
