@@ -10,6 +10,9 @@ if [ -r ~/.bashrc ]; then
   source ~/.bashrc
 fi
 
+if [ -r ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+fi
 #==========================================================================
 # basic settings
 #==========================================================================
