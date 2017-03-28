@@ -39,5 +39,5 @@ YELLOW='\[\e[0;33m\]'
 # assign new colorized prompt
 #export PS1="$RED$DIRTY_STATE$NO_COLOR$YELLOW\$$NO_COLOR "
 # prompt
-export PS1="\u@\[\e[0;34m\]:\w\$\[\e[00m\] "
+export PS1="\u@\[\e[0;33m\]:\w\$\[\e[00m\] "
 
