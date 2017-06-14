@@ -1,19 +1,4 @@
 #==========================================================================
-# Source aliases and bashrc if present
-#==========================================================================
-
-if [ -r ~/.aliases ]; then
-  source ~/.aliases
-fi
-
-if [ -r ~/.bashrc ]; then
-  source ~/.bashrc
-fi
-
-if [ -r ~/.git-completion.bash ]; then
-  source ~/.git-completion.bash
-fi
-#==========================================================================
 # basic settings
 #==========================================================================
 
@@ -40,4 +25,3 @@ YELLOW='\[\e[0;33m\]'
 #export PS1="$RED$DIRTY_STATE$NO_COLOR$YELLOW\$$NO_COLOR "
 # prompt
 export PS1="\u@\[\e[0;33m\]:\w\$\[\e[00m\] "
-
