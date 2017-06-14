@@ -1,6 +1,8 @@
 #!/bin/sh
-
-echo "=== Installing..."
+GREEN="\033[1;32m"
+YELLOW="\033[1;33m"
+CLEAR="\033[0m"
+echo "=== Installing dotfiles..."
 
 array=(
   aliases
@@ -9,7 +11,7 @@ array=(
   git-completion.bash
 )
 
-echo "=== creating symbolic link & source $file"
+echo "=== creating symbolic link & source $file\n"
 
 for file in ${array[@]};do
   if [[ -e $HOME/.$file ]]; then
@@ -19,5 +21,4 @@ for file in ${array[@]};do
   ln -s $PWD/$file $HOME/.$file
   source $HOME/.$file
 done
-
-echo "=== Install Success"
+echo "=== ${GREEN}Success${CLEAR}"
