@@ -5,9 +5,9 @@ CLEAR="\033[0m"
 echo "=== Installing dotfiles..."
 
 array=(
+  bashrc
   aliases
   inputrc
-  bash_profile
   git-completion.bash
 )
 
@@ -19,6 +19,5 @@ for file in ${array[@]};do
     mv $HOME/.$file $HOME/.$file.OLD
   fi
   ln -s $PWD/$file $HOME/.$file
-  source $HOME/.$file
 done
 echo "=== ${GREEN}Success${CLEAR}"

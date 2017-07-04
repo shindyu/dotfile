@@ -7,19 +7,19 @@ NO_COLOR='\033[0m'
 ## fix version
 fix_carthage_version="0.20.1"
 fix_pods_version="1.2.1"
-fix_xcode_version="8.2.1"
-fix_swift_version="3.0.2"
+fix_xcode_version="8.3.2"
+fix_swift_version="3.1"
 
 carthage_version=$(carthage version)
 echo "=== checking carthage version ..." $carthage_version
 if [ "$carthage_version" != "$fix_carthage_version" ]; then
     echo -e ${RED} "The specified version is different from the version of the current local environment"
-#    echo -e ${YELLOW} "upgrade the version of carthage? [y/n]"
-#    read answer_carthage
-#    case $answer_carthage in
-#        "" | "Y" | "y" | "yes" | "Yes" | "YES" ) brew upgrade carthage;;
-#        * ) ;;
-#    esac
+    echo -e ${YELLOW} "upgrade the version of carthage? [y/n]" ${NO_COLOR}
+    read answer_carthage
+    case $answer_carthage in
+        "" | "Y" | "y" | "yes" | "Yes" | "YES" ) brew upgrade carthage;;
+        * ) ;;
+    esac
     echo -e ${NO_COLOR}
 fi
 
