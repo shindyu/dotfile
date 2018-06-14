@@ -3,7 +3,7 @@ personal useful setup
 # how to use
 ```
 $ git clone git@github.com:shindyu/useful.git
-$ cd useful
+$ cd dotfile
 $ ./install.sh
 
 ## if your machine is MacOS & you use terminal,
